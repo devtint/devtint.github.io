@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tint Naing Win — pentester & coder</title>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&family=DM+Sans:wght@400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <header class="hero card">
+      <img class="avatar" src="https://avatars.githubusercontent.com/u/188316439?v=4" alt="Tint Naing Win avatar">
+      <div class="hero-content">
+        <h1>Tint Naing Win <span class="muted">(devtint)</span></h1>
+        <p class="lead">Security enthusiast focused on penetration testing, vulnerability research, and building tools that make security work easier. Currently studying Digital Technology Innovation at Kasem Bundit University, Bangkok.</p>
+        <p class="meta">Bangkok, Thailand • <a href="https://tintnaingwin.vercel.app/" target="_blank" rel="noreferrer">portfolio</a></p>
+        <div class="actions">
+          <a class="btn primary" href="#cli">See CLI demos</a>
+          <a class="btn ghost" href="#projects">View projects</a>
+        </div>
+        <div class="social">
+          <a href="https://github.com/devtint" aria-label="GitHub">GitHub</a>
+          <a href="https://t.me/BadCodeWriter" aria-label="Telegram">Telegram</a>
+          <a href="https://orcid.org/0009-0007-0176-2022" aria-label="ORCID">ORCID</a>
+        </div>
+      </div>
+    </header>
+
+    <section id="about" class="card section">
+      <h2>About me</h2>
+      <p>I'm into security — pentesting, vulnerability research, and automation. I build tools (scanners, CLI utilities) to make security workflows faster and more practical. Python, TypeScript, and JavaScript are my go-to languages for getting things done.</p>
+      <p>Big fan of Linux and terminal-based workflows. When I'm not testing or building, I'm probably tweaking my setup, exploring new security techniques, or contributing to open-source projects.</p>
+    </section>
+
+    <section id="projects" class="card section">
+      <h2>Featured projects</h2>
+      <div class="projects-grid">
+        <article class="project">
+          <h3><a href="https://github.com/devtint/NUCLEI_CNM" target="_blank">NUCLEI_CNM</a></h3>
+          <p>TypeScript — Nuclei command‑center & helpers.</p>
+          <div class="project-meta"><span class="chip">TypeScript</span> <code class="cmd">$ git clone https://github.com/devtint/NUCLEI_CNM</code></div>
+        </article>
+
+        <article class="project">
+          <h3><a href="https://github.com/devtint/SecurityHeaderScanner" target="_blank">SecurityHeaderScanner</a></h3>
+          <p>Python — quick HTTP security header scanner.</p>
+          <div class="project-meta"><span class="chip">Python</span> <code class="cmd">$ python3 SecurityHeaderScanner/scan.py --target example.com</code></div>
+        </article>
+
+        <article class="project">
+          <h3><a href="https://github.com/devtint/GeminiSheeridVerify" target="_blank">GeminiSheeridVerify</a></h3>
+          <p>Python — verification/integration tooling (easy to run).</p>
+          <div class="project-meta"><span class="chip">Python</span> <code class="cmd">$ git clone https://github.com/devtint/GeminiSheeridVerify</code></div>
+        </article>
+
+        <article class="project">
+          <h3><a href="https://github.com/devtint/Js-And-Endpoints-scanner" target="_blank">Js-And-Endpoints-scanner</a></h3>
+          <p>JavaScript — JS & endpoint scanning utilities.</p>
+          <div class="project-meta"><span class="chip">JavaScript</span> <code class="cmd">$ node scan.js example.com</code></div>
+        </article>
+
+        <article class="project">
+          <h3><a href="https://github.com/devtint/r3verse_shells_gen" target="_blank">r3verse_shells_gen</a></h3>
+          <p>JavaScript — handy reverse-shell snippets & generators.</p>
+          <div class="project-meta"><span class="chip">JavaScript</span> <code class="cmd">$ git clone https://github.com/devtint/r3verse_shells_gen</code></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="cli" class="card section terminal-wrap">
+      <h2>Terminal & CLI</h2>
+      <p class="section-desc">Try it out! Type commands below to explore. Type <code>help</code> to see available commands.</p>
+      
+      <div class="terminal interactive-term" id="interactive-terminal">
+        <div class="term-header"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span><span class="term-title">devtint@kali — zsh</span></div>
+        <div class="term-body" id="term-output">
+          <div class="term-line"><span class="output">Welcome to devtint's interactive terminal!</span></div>
+          <div class="term-line"><span class="output">Type <span class="cmd-hint">help</span> to see available commands.</span></div>
+          <div class="term-line"><span class="output">───────────────────────────────────────────</span></div>
+        </div>
+        <div class="term-input-line">
+          <span class="prompt">devtint@kali:~$</span>
+          <input type="text" id="term-input" class="term-input" autocomplete="off" spellcheck="false" autofocus>
+        </div>
+      </div>
+
+      <div class="terminal neofetch-term">
+        <div class="term-header"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span><span class="term-title">neofetch</span></div>
+        <div class="term-body neofetch-body">
+          <pre class="ascii-art">      ,.....                                       
+  .,;:;;;;;;;;:;,.                                 
+.;;;;;;;;;;;;;;;;;,.                               
+;;;;;;;;,'  `;;;;;;;;;                             
+;;;;;;'        `;;;;;;;                            
+;;;;;            ;;;;;;                            
+;;;;              ;;;;;                            
+;;;;              ;;;;;                            
+;;;;;            ;;;;;;                            
+;;;;;;          ;;;;;;'                            
+`;;;;;;;;;;;;;;;;;;;;;                             
+  ';;;;;;;;;;;;;;;;;;                              
+      `';;;;;;;;'`                                 
+</pre>
+          <div class="neofetch-info">
+            <span class="nf-label">devtint</span>@<span class="nf-value">kali</span>
+            <span class="nf-row"><span class="nf-key">OS:</span> Kali Linux</span>
+            <span class="nf-row"><span class="nf-key">Shell:</span> zsh + oh-my-zsh</span>
+            <span class="nf-row"><span class="nf-key">Editor:</span> VS Code / vim</span>
+            <span class="nf-row"><span class="nf-key">Languages:</span> Python, TypeScript, JS</span>
+            <span class="nf-row"><span class="nf-key">Tools:</span> Nuclei, Burp, Git</span>
+            <span class="nf-row"><span class="nf-key">Interests:</span> Security, Automation, CLI</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tech" class="card section">
+      <h2>Skills & technologies</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <ul class="chips">
+            <li>Python</li>
+            <li>TypeScript</li>
+            <li>JavaScript</li>
+            <li>Bash</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Frameworks & tools</h3>
+          <ul class="chips">
+            <li>React</li>
+            <li>Node.js</li>
+            <li>FastAPI</li>
+            <li>Docker</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Security</h3>
+          <ul class="chips">
+            <li>Nuclei</li>
+            <li>Burp Suite</li>
+            <li>OWASP</li>
+            <li>Web security</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Other</h3>
+          <ul class="chips">
+            <li>Git</li>
+            <li>Linux</li>
+            <li>CI/CD</li>
+            <li>VS Code</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="card section">
+      <h2>Get in touch</h2>
+      <p>I'm always open to discussing new projects, collaboration opportunities, or just chatting about security and development.</p>
+      <div class="contact-links">
+        <a href="https://github.com/devtint" class="contact-item"><span class="contact-icon">⌘</span> GitHub</a>
+        <a href="https://t.me/BadCodeWriter" class="contact-item"><span class="contact-icon">✈</span> Telegram</a>
+        <a href="https://tintnaingwin.vercel.app/" class="contact-item"><span class="contact-icon">◎</span> Portfolio</a>
+        <a href="https://orcid.org/0009-0007-0176-2022" class="contact-item"><span class="contact-icon">◉</span> ORCID</a>
+      </div>
+    </section>
+
+    <section id="stats" class="card section">
+      <h2>Quick stats</h2>
+      <div class="stats-grid">
+        <div class="stat">
+          <span class="stat-num">24+</span>
+          <span class="stat-label">Public repos</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">585+</span>
+          <span class="stat-label">Contributions (2025)</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">5+</span>
+          <span class="stat-label">Security tools</span>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <small>© 2026 Tint Naing Win — Built with care • <a href="https://github.com/devtint" target="_blank">GitHub</a></small>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

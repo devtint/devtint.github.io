@@ -2,192 +2,428 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Tint Naing Win — pentester & coder</title>
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&family=DM+Sans:wght@400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tint Naing Win — Security Engineer & Tool Developer</title>
+  <meta name="description" content="Professional portfolio of Tint Naing Win (devtint), focusing on offensive security, vulnerability research, penetration testing, and automated security tooling." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="light-theme">
   <main class="page">
-    <header class="hero card">
-      <img class="avatar" src="https://avatars.githubusercontent.com/u/188316439?v=4" alt="Tint Naing Win avatar">
-      <div class="hero-content">
+    <!-- Navigation -->
+    <nav class="navbar" id="nav">
+      <div class="nav-logo">
+        devtint
+      </div>
+      <div style="display: flex; align-items: center; gap: 24px;">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Announcement/Status Banner -->
+    <div class="announcement-banner">
+      <span class="announcement-badge">Status</span>
+      <span class="announcement-text">Open to collaboration & security research.</span>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="hero-info">
         <h1>Tint Naing Win <span class="muted">(devtint)</span></h1>
-        <p class="lead">Security enthusiast focused on penetration testing, vulnerability research, and building tools that make security work easier. Currently studying Digital Technology Innovation at Kasem Bundit University, Bangkok.</p>
-        <p class="meta">Bangkok, Thailand • <a href="https://tintnaingwin.vercel.app/" target="_blank" rel="noreferrer">portfolio</a></p>
+        <p class="lead">Security Engineer and Tool Developer specializing in offensive security automation, vulnerability research, and custom reconnaissance pipelines.</p>
+        <div class="meta-details">
+          <span class="meta-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Bangkok, Thailand
+          </span>
+          <span class="meta-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path></svg>
+            Kasem Bundit University
+          </span>
+          <span class="meta-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            <a href="https://tintnaingwin.vercel.app/" target="_blank" rel="noreferrer">Live Portfolio</a>
+          </span>
+        </div>
         <div class="actions">
-          <a class="btn primary" href="#cli">See CLI demos</a>
-          <a class="btn ghost" href="#projects">View projects</a>
+          <a class="btn primary" href="#projects">Explore Tools</a>
+          <a class="btn secondary" href="#contact">Get in Touch</a>
         </div>
-        <div class="social">
-          <a href="https://github.com/devtint" aria-label="GitHub">GitHub</a>
-          <a href="https://t.me/BadCodeWriter" aria-label="Telegram">Telegram</a>
-          <a href="https://orcid.org/0009-0007-0176-2022" aria-label="ORCID">ORCID</a>
-        </div>
+      </div>
+      <div class="hero-avatar">
+        <img class="avatar-img" src="https://avatars.githubusercontent.com/u/188316439?v=4" alt="Tint Naing Win Profile Avatar" />
       </div>
     </header>
 
-    <section id="about" class="card section">
+    <!-- Key Metrics Bar -->
+    <section class="stats-bar" id="stats">
+      <div class="stat-item">
+        <span class="stat-num" id="stat-repos">36+</span>
+        <span class="stat-label">Repositories</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num" id="stat-contribs">585+</span>
+        <span class="stat-label">Contributions</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">9+</span>
+        <span class="stat-label">Security Utilities</span>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
       <h2>About me</h2>
-      <p>I'm into security — pentesting, vulnerability research, and automation. I build tools (scanners, CLI utilities) to make security workflows faster and more practical. Python, TypeScript, and JavaScript are my go-to languages for getting things done.</p>
-      <p>Big fan of Linux and terminal-based workflows. When I'm not testing or building, I'm probably tweaking my setup, exploring new security techniques, or contributing to open-source projects.</p>
+      <div class="about-text">
+        <p>I design and build specialized tools that automate complex workflows in penetration testing, network auditing, and vulnerability scanning. My security philosophy focuses on developer-first tools, combining clean static code analysis with robust automated scanner orchestration to identify flaws early.</p>
+        <p>Currently studying <strong>Digital Technology Innovation</strong> at <strong>Kasem Bundit University</strong>, I actively conduct independent vulnerability research and write utilities using Python, TypeScript, and Go. I am highly comfortable building automated cloud setups, custom Telegram administrators, proxy pipelines, and terminal utilities.</p>
+      </div>
     </section>
 
-    <section id="projects" class="card section">
-      <h2>Featured projects</h2>
+    <!-- Featured Projects -->
+    <section id="projects" class="section">
+      <h2>Featured security tooling & research</h2>
       <div class="projects-grid">
-        <article class="project">
-          <h3><a href="https://github.com/devtint/NUCLEI_CNM" target="_blank">NUCLEI_CNM</a></h3>
-          <p>TypeScript — Nuclei command‑center & helpers.</p>
-          <div class="project-meta"><span class="chip">TypeScript</span> <code class="cmd">$ git clone https://github.com/devtint/NUCLEI_CNM</code></div>
-        </article>
-
-        <article class="project">
-          <h3><a href="https://github.com/devtint/SecurityHeaderScanner" target="_blank">SecurityHeaderScanner</a></h3>
-          <p>Python — quick HTTP security header scanner.</p>
-          <div class="project-meta"><span class="chip">Python</span> <code class="cmd">$ python3 SecurityHeaderScanner/scan.py --target example.com</code></div>
-        </article>
-
-        <article class="project">
-          <h3><a href="https://github.com/devtint/GeminiSheeridVerify" target="_blank">GeminiSheeridVerify</a></h3>
-          <p>Python — verification/integration tooling (easy to run).</p>
-          <div class="project-meta"><span class="chip">Python</span> <code class="cmd">$ git clone https://github.com/devtint/GeminiSheeridVerify</code></div>
-        </article>
-
-        <article class="project">
-          <h3><a href="https://github.com/devtint/Js-And-Endpoints-scanner" target="_blank">Js-And-Endpoints-scanner</a></h3>
-          <p>JavaScript — JS & endpoint scanning utilities.</p>
-          <div class="project-meta"><span class="chip">JavaScript</span> <code class="cmd">$ node scan.js example.com</code></div>
-        </article>
-
-        <article class="project">
-          <h3><a href="https://github.com/devtint/r3verse_shells_gen" target="_blank">r3verse_shells_gen</a></h3>
-          <p>JavaScript — handy reverse-shell snippets & generators.</p>
-          <div class="project-meta"><span class="chip">JavaScript</span> <code class="cmd">$ git clone https://github.com/devtint/r3verse_shells_gen</code></div>
-        </article>
-      </div>
-    </section>
-
-    <section id="cli" class="card section terminal-wrap">
-      <h2>Terminal & CLI</h2>
-      <p class="section-desc">Try it out! Type commands below to explore. Type <code>help</code> to see available commands.</p>
-      
-      <div class="terminal interactive-term" id="interactive-terminal">
-        <div class="term-header"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span><span class="term-title">devtint@kali — zsh</span></div>
-        <div class="term-body" id="term-output">
-          <div class="term-line"><span class="output">Welcome to devtint's interactive terminal!</span></div>
-          <div class="term-line"><span class="output">Type <span class="cmd-hint">help</span> to see available commands.</span></div>
-          <div class="term-line"><span class="output">───────────────────────────────────────────</span></div>
-        </div>
-        <div class="term-input-line">
-          <span class="prompt">devtint@kali:~$</span>
-          <input type="text" id="term-input" class="term-input" autocomplete="off" spellcheck="false" autofocus>
-        </div>
-      </div>
-
-      <div class="terminal neofetch-term">
-        <div class="term-header"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span><span class="term-title">neofetch</span></div>
-        <div class="term-body neofetch-body">
-          <pre class="ascii-art">      ,.....                                       
-  .,;:;;;;;;;;:;,.                                 
-.;;;;;;;;;;;;;;;;;,.                               
-;;;;;;;;,'  `;;;;;;;;;                             
-;;;;;;'        `;;;;;;;                            
-;;;;;            ;;;;;;                            
-;;;;              ;;;;;                            
-;;;;              ;;;;;                            
-;;;;;            ;;;;;;                            
-;;;;;;          ;;;;;;'                            
-`;;;;;;;;;;;;;;;;;;;;;                             
-  ';;;;;;;;;;;;;;;;;;                              
-      `';;;;;;;;'`                                 
-</pre>
-          <div class="neofetch-info">
-            <span class="nf-label">devtint</span>@<span class="nf-value">kali</span>
-            <span class="nf-row"><span class="nf-key">OS:</span> Kali Linux</span>
-            <span class="nf-row"><span class="nf-key">Shell:</span> zsh + oh-my-zsh</span>
-            <span class="nf-row"><span class="nf-key">Editor:</span> VS Code / vim</span>
-            <span class="nf-row"><span class="nf-key">Languages:</span> Python, TypeScript, JS</span>
-            <span class="nf-row"><span class="nf-key">Tools:</span> Nuclei, Burp, Git</span>
-            <span class="nf-row"><span class="nf-key">Interests:</span> Security, Automation, CLI</span>
+        <!-- Project 1 -->
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-category">Vulnerability Management</span>
+            <a href="https://github.com/devtint/NUCLEI_CNM" class="github-link" target="_blank" rel="noreferrer" aria-label="NUCLEI_CNM Github Link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
           </div>
-        </div>
+          <h3>NUCLEI_CNM</h3>
+          <p>Enterprise vulnerability command-center for orchestrating Nuclei scanners. Features multi-node scanner scheduling, live findings reporting, AI template suggestions (via Groq API), and Shodan scanning integrations.</p>
+          <ul class="tech-chips">
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Groq API</li>
+          </ul>
+          <div class="cmd-box">
+            <span class="cmd-text">git clone https://github.com/devtint/NUCLEI_CNM</span>
+            <button class="btn-copy" title="Copy to clipboard" aria-label="Copy clone command">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-category">Security Auditing</span>
+            <a href="https://github.com/devtint/SecurityHeaderScanner" class="github-link" target="_blank" rel="noreferrer" aria-label="SecurityHeaderScanner Github Link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+          </div>
+          <h3>SecurityHeaderScanner</h3>
+          <p>High-speed HTTP compliance scanner checking server configurations against OWASP web security standards. Validates CSP, HSTS, CORS, X-Frame-Options, and prints formatted CLI results.</p>
+          <ul class="tech-chips">
+            <li>Python</li>
+            <li>HTTPX</li>
+            <li>Rich</li>
+          </ul>
+          <div class="cmd-box">
+            <span class="cmd-text">git clone https://github.com/devtint/SecurityHeaderScanner</span>
+            <button class="btn-copy" title="Copy to clipboard" aria-label="Copy clone command">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-category">Automation</span>
+            <a href="https://github.com/devtint/GeminiSheeridVerify" class="github-link" target="_blank" rel="noreferrer" aria-label="GeminiSheeridVerify Github Link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+          </div>
+          <h3>GeminiSheeridVerify</h3>
+          <p>SheerID identity verification automation pipeline for acquiring developer API access. Implements background task queues, proxy rotation, Telegram warnings, and custom TLS fingerprinting.</p>
+          <ul class="tech-chips">
+            <li>Python</li>
+            <li>curl_cffi</li>
+            <li>Asyncio</li>
+          </ul>
+          <div class="cmd-box">
+            <span class="cmd-text">git clone https://github.com/devtint/GeminiSheeridVerify</span>
+            <button class="btn-copy" title="Copy to clipboard" aria-label="Copy clone command">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-category">Reconnaissance</span>
+            <a href="https://github.com/devtint/Js-And-Endpoints-scanner" class="github-link" target="_blank" rel="noreferrer" aria-label="Js-And-Endpoints-scanner Github Link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+          </div>
+          <h3>Js-And-Endpoints-scanner</h3>
+          <p>Static reconnaissance scanning helper (CLI & extension) built to parse client-side JS bundles. Discovers hidden API paths, unlinked API routing endpoints, and hardcoded secrets.</p>
+          <ul class="tech-chips">
+            <li>JavaScript</li>
+            <li>Node.js</li>
+            <li>Regex</li>
+          </ul>
+          <div class="cmd-box">
+            <span class="cmd-text">git clone https://github.com/devtint/Js-And-Endpoints-scanner</span>
+            <button class="btn-copy" title="Copy to clipboard" aria-label="Copy clone command">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-category">Network Audit</span>
+            <a href="https://github.com/devtint/CAPTIVE_AUDIT" class="github-link" target="_blank" rel="noreferrer" aria-label="CAPTIVE_AUDIT Github Link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+          </div>
+          <h3>CAPTIVE_AUDIT</h3>
+          <p>Interactive auditing utility for inspecting wireless captive portal authentication models. Audits DNS/DHCP leaks, tests bypass methods, and generates detailed PDF reports.</p>
+          <ul class="tech-chips">
+            <li>Python</li>
+            <li>Scapy</li>
+            <li>Shell</li>
+            <li>TShark</li>
+          </ul>
+          <div class="cmd-box">
+            <span class="cmd-text">git clone https://github.com/devtint/CAPTIVE_AUDIT</span>
+            <button class="btn-copy" title="Copy to clipboard" aria-label="Copy clone command">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 6 -->
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-category">VPN Automation</span>
+            <a href="https://github.com/devtint/WarpConfGen" class="github-link" target="_blank" rel="noreferrer" aria-label="WarpConfGen Github Link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+          </div>
+          <h3>WarpConfGen</h3>
+          <p>WireGuard configuration generator script and Telegram bot assisting in the deployment of secure, split-tunnel Cloudflare WARP client configurations across devices.</p>
+          <ul class="tech-chips">
+            <li>Python</li>
+            <li>Telegram API</li>
+            <li>WireGuard</li>
+          </ul>
+          <div class="cmd-box">
+            <span class="cmd-text">git clone https://github.com/devtint/WarpConfGen</span>
+            <button class="btn-copy" title="Copy to clipboard" aria-label="Copy clone command">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 7 -->
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-category">Offensive Payload</span>
+            <a href="https://github.com/devtint/r3verse_shells_gen" class="github-link" target="_blank" rel="noreferrer" aria-label="r3verse_shells_gen Github Link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+          </div>
+          <h3>r3verse_shells_gen</h3>
+          <p>Interactive CLI utility and snippets bundle generating reverse-shell payloads across major networking protocols and programming languages (Bash, Python, Netcat, PowerShell, PHP, Ruby).</p>
+          <ul class="tech-chips">
+            <li>JavaScript</li>
+            <li>Shell</li>
+            <li>Python</li>
+          </ul>
+          <div class="cmd-box">
+            <span class="cmd-text">git clone https://github.com/devtint/r3verse_shells_gen</span>
+            <button class="btn-copy" title="Copy to clipboard" aria-label="Copy clone command">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 8 -->
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-category">DevSecOps Infrastructure</span>
+            <a href="https://github.com/devtint/free-stack" class="github-link" target="_blank" rel="noreferrer" aria-label="free-stack Github Link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+          </div>
+          <h3>free-stack</h3>
+          <p>DevSecOps architectural guides, configuration parameters, and deployment templates optimized for securely deploying production workloads on free-tier cloud platforms (Vercel, Supabase, Cloudflare).</p>
+          <ul class="tech-chips">
+            <li>YAML</li>
+            <li>Docker</li>
+            <li>Shell</li>
+            <li>CI/CD</li>
+          </ul>
+          <div class="cmd-box">
+            <span class="cmd-text">git clone https://github.com/devtint/free-stack</span>
+            <button class="btn-copy" title="Copy to clipboard" aria-label="Copy clone command">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 9 -->
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-category">API Security</span>
+            <a href="https://github.com/devtint/API_PENTEST" class="github-link" target="_blank" rel="noreferrer" aria-label="API_PENTEST Github Link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+          </div>
+          <h3>API_PENTEST</h3>
+          <p>Automated security scanning framework built for REST and GraphQL APIs. Scans endpoint schemas, maps routes, and audits for IDOR flaws, query injection, and schema disclosure.</p>
+          <ul class="tech-chips">
+            <li>Python</li>
+            <li>GraphQL</li>
+            <li>REST</li>
+            <li>Security Testing</li>
+          </ul>
+          <div class="cmd-box">
+            <span class="cmd-text">git clone https://github.com/devtint/API_PENTEST</span>
+            <button class="btn-copy" title="Copy to clipboard" aria-label="Copy clone command">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+            </button>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section id="tech" class="card section">
-      <h2>Skills & technologies</h2>
+    <!-- Skills Matrix -->
+    <section id="skills" class="section">
+      <h2>Technical competencies</h2>
       <div class="skills-grid">
-        <div class="skill-group">
+        <div class="skills-card">
           <h3>Languages</h3>
-          <ul class="chips">
+          <ul class="skills-list">
             <li>Python</li>
             <li>TypeScript</li>
             <li>JavaScript</li>
-            <li>Bash</li>
+            <li>Bash scripting</li>
+            <li>Go / C</li>
           </ul>
         </div>
-        <div class="skill-group">
-          <h3>Frameworks & tools</h3>
-          <ul class="chips">
-            <li>React</li>
-            <li>Node.js</li>
-            <li>FastAPI</li>
-            <li>Docker</li>
-          </ul>
-        </div>
-        <div class="skill-group">
-          <h3>Security</h3>
-          <ul class="chips">
-            <li>Nuclei</li>
+        <div class="skills-card">
+          <h3>Security & Tools</h3>
+          <ul class="skills-list">
+            <li>Nuclei scanning</li>
             <li>Burp Suite</li>
-            <li>OWASP</li>
-            <li>Web security</li>
+            <li>OWASP Web security</li>
+            <li>Captive portal audits</li>
+            <li>API vulnerability testing</li>
           </ul>
         </div>
-        <div class="skill-group">
-          <h3>Other</h3>
-          <ul class="chips">
-            <li>Git</li>
-            <li>Linux</li>
-            <li>CI/CD</li>
-            <li>VS Code</li>
+        <div class="skills-card">
+          <h3>Frameworks & Cloud</h3>
+          <ul class="skills-list">
+            <li>Node.js / Express</li>
+            <li>React / Next.js</li>
+            <li>FastAPI</li>
+            <li>Vercel / Supabase</li>
+          </ul>
+        </div>
+        <div class="skills-card">
+          <h3>Infrastructure & Ops</h3>
+          <ul class="skills-list">
+            <li>Git version control</li>
+            <li>Linux environments</li>
+            <li>Docker containerization</li>
+            <li>WireGuard deployments</li>
+            <li>CI/CD workflow basics</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="card section">
+    <!-- Contact & Social -->
+    <section id="contact" class="section">
       <h2>Get in touch</h2>
-      <p>I'm always open to discussing new projects, collaboration opportunities, or just chatting about security and development.</p>
-      <div class="contact-links">
-        <a href="https://github.com/devtint" class="contact-item"><span class="contact-icon">⌘</span> GitHub</a>
-        <a href="https://t.me/BadCodeWriter" class="contact-item"><span class="contact-icon">✈</span> Telegram</a>
-        <a href="https://tintnaingwin.vercel.app/" class="contact-item"><span class="contact-icon">◎</span> Portfolio</a>
-        <a href="https://orcid.org/0009-0007-0176-2022" class="contact-item"><span class="contact-icon">◉</span> ORCID</a>
+      <div class="contact-grid">
+        <a href="https://github.com/devtint" class="contact-card" target="_blank" rel="noreferrer">
+          <div class="contact-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </div>
+          <div class="contact-info">
+            <span class="contact-title">GitHub</span>
+            <span class="contact-value">@devtint</span>
+          </div>
+        </a>
+        <a href="https://t.me/BadCodeWriter" class="contact-card" target="_blank" rel="noreferrer">
+          <div class="contact-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+          </div>
+          <div class="contact-info">
+            <span class="contact-title">Telegram</span>
+            <span class="contact-value">@BadCodeWriter</span>
+          </div>
+        </a>
+        <a href="https://tintnaingwin.vercel.app/" class="contact-card" target="_blank" rel="noreferrer">
+          <div class="contact-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          </div>
+          <div class="contact-info">
+            <span class="contact-title">Portfolio</span>
+            <span class="contact-value">tintnaingwin.vercel.app</span>
+          </div>
+        </a>
+        <a href="https://orcid.org/0009-0007-0176-2022" class="contact-card" target="_blank" rel="noreferrer">
+          <div class="contact-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="4"></line><line x1="8" y1="2" x2="8" y2="4"></line><line x1="7" y1="8" x2="17" y2="8"></line><line x1="7" y1="12" x2="17" y2="12"></line><line x1="7" y1="16" x2="13" y2="16"></line></svg>
+          </div>
+          <div class="contact-info">
+            <span class="contact-title">ORCID</span>
+            <span class="contact-value">0009-0007-0176-2022</span>
+          </div>
+        </a>
       </div>
     </section>
 
-    <section id="stats" class="card section">
-      <h2>Quick stats</h2>
-      <div class="stats-grid">
-        <div class="stat">
-          <span class="stat-num">24+</span>
-          <span class="stat-label">Public repos</span>
-        </div>
-        <div class="stat">
-          <span class="stat-num">585+</span>
-          <span class="stat-label">Contributions (2025)</span>
-        </div>
-        <div class="stat">
-          <span class="stat-num">5+</span>
-          <span class="stat-label">Security tools</span>
-        </div>
-      </div>
-    </section>
-
+    <!-- Footer -->
     <footer class="footer">
-      <small>© 2026 Tint Naing Win — Built with care • <a href="https://github.com/devtint" target="_blank">GitHub</a></small>
+      <small>© 2026 Tint Naing Win — Built with care • <a href="https://github.com/devtint" target="_blank" rel="noreferrer">GitHub Profile</a></small>
     </footer>
   </main>
   <script src="script.js"></script>

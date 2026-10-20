@@ -1,0 +1,185 @@
+[
+  {
+    "title": "Wraith Certified AI Pentester (WCAP), Holder #50",
+    "organization": "Harbinger Security Consulting, LLC / Wraith",
+    "issue_date": "2026-08-19",
+    "cert_id": "WCAP-j6AZsfJTvBNs",
+    "sha256": "WCAP-j6AZsfJTvBNs · Verified Registry Holder #50",
+    "vulnerabilities": "Prompt Injection, Multi-Turn Crescendo, RAG Poisoning, SSRF & Tool Abuse",
+    "description": "Awarded permanent global registry rank as Holder #50 for the Wraith Certified AI Pentester (WCAP) credential with a standardized score of 1392/1600 (87% Verified Pass). Completed 100% exploitation across all 24 Wraith Academy offensive AI targets and engineered a 4-layer application defense stack.",
+    "verify_url": "https://wraith.sh/credentials/WCAP-j6AZsfJTvBNs",
+    "live_url": "https://devtint.github.io/llm-security-redteam-writeup/",
+    "image_url": "/assets/wcap_cert.webp",
+    "pdf_url": "",
+    "signed_by": "Anthony D'Onofrio, PhD (Principal, Harbinger Security Consulting, LLC)",
+    "program_type": "certifications",
+    "findings": [
+      {
+        "title": "Multi-Turn Crescendo & Persona Hijacking (24 Targets Captured)",
+        "severity": "Critical",
+        "status": "Remediated",
+        "date": "Aug 19, 2026"
+      },
+      {
+        "title": "RAG Pipeline Ingestion Poisoning & Tool-Abuse SSRF Exfiltration",
+        "severity": "Critical",
+        "status": "Remediated",
+        "date": "Aug 19, 2026"
+      },
+      {
+        "title": "4-Layer Application Defense Architecture Design & Verification",
+        "severity": "High",
+        "status": "Remediated",
+        "date": "Aug 19, 2026"
+      }
+    ]
+  },
+  {
+    "title": "Public-Facing AI Systems Security Research Certificate 2026",
+    "organization": "Kasem Bundit University มหาวิทยาลัยเกษมบัณฑิต",
+    "issue_date": "2026-08-21",
+    "cert_id": "1f19986e-ffbf-4254-9e1c-1ca6ba29fa7a",
+    "sha256": "1f19986e-ffbf-4254-9e1c-1ca6ba29fa7a",
+    "vulnerabilities": "Authentication Bypass, Session Hijacking",
+    "description": "Reported a critical vulnerability in Alita, the AI-powered LINE chatbot operated by KBU. The vulnerability allowed full takeover of any student's Microsoft 365 account within 60 seconds without technical tools. KBU's Computing and Technology Center remediated the issue and awarded Certificates of Appreciation.",
+    "verify_url": "https://it.kbu.ac.th/apps/certs/verify/1f19986e-ffbf-4254-9e1c-1ca6ba29fa7a",
+    "live_url": "",
+    "image_url": "/assets/kbu-alita-ai-cert.webp",
+    "pdf_url": "/assets/kbu-alita-ai-cert.pdf",
+    "signed_by": "Suphanchai Punthawanunt (Director of Computing and Technology Center)",
+    "program_type": "university",
+    "findings": [
+      {
+        "title": "Authentication Bypass & Microsoft 365 Account Takeover",
+        "severity": "Critical",
+        "status": "Remediated",
+        "date": "Aug 21, 2026"
+      }
+    ]
+  },
+  {
+    "title": "Responsible Disclosure Recognition Program 2026",
+    "organization": "Kasem Bundit University มหาวิทยาลัยเกษมบัณฑิต",
+    "issue_date": "2026-08-13",
+    "cert_id": "5eebb7ad-aaca-4490-891d-1d62c569f3a5",
+    "sha256": "5eebb7ad-aaca-4490-891d-1d62c569f3a5",
+    "vulnerabilities": "BROKEN ACCESS CONTROL, IDOR, Data Exposure",
+    "description": "Reported a critical vulnerability in the Student Admissions Portal affecting KBU. It allowed unauthenticated access to the internal administration panel, exposing applicant PII (National ID, Passports) and academic transcripts and Students's finical data which can be possible for full account takeover . Collaborated with KBU’s technical team for prompt remediation.",
+    "verify_url": "https://it.kbu.ac.th/apps/certs/verify/5eebb7ad-aaca-4490-891d-1d62c569f3a5",
+    "live_url": "",
+    "image_url": "/assets/kbu-disclosure-cert2.webp",
+    "pdf_url": "/assets/kbu-disclosure-cert2.pdf",
+    "signed_by": "Suphanchai Punthawanunt (Director of Computing and Technology Center)",
+    "program_type": "university",
+    "findings": [
+      {
+        "title": "BROKEN ACCESS CONTROL",
+        "severity": "Critical",
+        "status": "Remediated",
+        "date": "Aug 13, 2026"
+      },
+      {
+        "title": "IDOR & Data Exposure",
+        "severity": "High",
+        "status": "Remediated",
+        "date": "Aug 13, 2026"
+      }
+    ]
+  },
+  {
+    "title": "Responsible Disclosure Recognition Program 2026",
+    "organization": "Kasem Bundit University มหาวิทยาลัยเกษมบัณฑิต",
+    "issue_date": "2026-05-25",
+    "cert_id": "21f26ef0-2588-491a-8930-30c9f54e40d4",
+    "sha256": "2e2893c59af5b7e8c37d1f807706b660eb10729575b0115e8fb47d166f39d7c0",
+    "vulnerabilities": "Broken Access Control, Injection-related Vulnerabilities",
+    "description": "While studying at Kasem Bundit University, I identified and reported security vulnerabilities affecting student data protection in one of the university's systems. Worked directly with KBU’s Computing and Technology Center through the responsible disclosure process, from the initial report and verification to eventual remediation.",
+    "verify_url": "https://it.kbu.ac.th/apps/certs/verify/21f26ef0-2588-491a-8930-30c9f54e40d4",
+    "live_url": "",
+    "image_url": "/assets/kbu-disclosure-cert1.webp",
+    "pdf_url": "",
+    "signed_by": "Suphanchai Punthawanunt (Director of Computing and Technology Center)",
+    "program_type": "university",
+    "findings": [
+      {
+        "title": "Broken Access Control (Exposed Student Data Protection)",
+        "severity": "Critical",
+        "status": "Remediated",
+        "date": "May 25, 2026"
+      },
+      {
+        "title": "Parameter Injection-related Vulnerabilities",
+        "severity": "Medium",
+        "status": "Remediated",
+        "date": "May 25, 2026"
+      }
+    ]
+  },
+  {
+    "title": "Vision Net Student Portal Vulnerability",
+    "organization": "Vision Net / Kasem Bundit University",
+    "issue_date": "2026-05-19",
+    "cert_id": "",
+    "sha256": "N/A",
+    "vulnerabilities": "Unauthenticated Document Access, IDOR, Sensitive Credential Exposure",
+    "description": "Responsibly disclosed critical vulnerabilities in the Vision Net student portal system affecting multiple institutions. Discovered unauthenticated access to the document generation endpoint, which allowed downloading PDF profiles containing sensitive data (including passport numbers used as default passwords) via an IDOR vulnerability. The vendor acknowledged the issue and disabled the affected URL while coordinating a permanent resolution.",
+    "verify_url": "",
+    "live_url": "",
+    "image_url": "",
+    "pdf_url": "",
+    "signed_by": "Vision Net Support Team",
+    "program_type": "corporate",
+    "findings": [
+      {
+        "title": "Unauthenticated Document Generation Endpoint",
+        "severity": "Critical",
+        "status": "Remediated",
+        "date": "May 19, 2026"
+      },
+      {
+        "title": "IDOR via repwhere parameter",
+        "severity": "High",
+        "status": "Remediated",
+        "date": "May 19, 2026"
+      },
+      {
+        "title": "Sensitive Credential Exposure (Passport as Default Password)",
+        "severity": "Critical",
+        "status": "Remediated",
+        "date": "May 19, 2026"
+      }
+    ]
+  },
+  {
+    "title": "Web Application Security",
+    "organization": "Creatigon",
+    "issue_date": "2023-11-01",
+    "cert_id": "creatigon-was-2023",
+    "sha256": "N/A",
+    "vulnerabilities": "Web Application Security Fundamentals",
+    "description": "Successfully completed training in Web Application Security by Creatigon, covering the fundamentals of identifying and mitigating common web vulnerabilities.",
+    "verify_url": "https://www.creatigon.com",
+    "live_url": "",
+    "image_url": "/assets/Web_Application_Security.webp",
+    "pdf_url": "",
+    "signed_by": "Min Ko Ko (Founder - Creatigon)",
+    "program_type": "certifications",
+    "findings": []
+  },
+  {
+    "title": "Ethical Hacker",
+    "organization": "Cisco Networking Academy",
+    "issue_date": "2025-07-14",
+    "cert_id": "9d32c318-4803-4d88-9515-c66e0c32a322",
+    "sha256": "9d32c318-4803-4d88-9515-c66e0c32a322",
+    "vulnerabilities": "Ethical Hacking, Network Security",
+    "description": "Successfully completed the Ethical Hacker course offered by Cisco Networking Academy, demonstrating proficiency in network defense and ethical hacking principles.",
+    "verify_url": "https://www.credly.com/badges/3933cd82-1f8b-4a6e-b8d7-34bc9ed32254",
+    "live_url": "",
+    "image_url": "/assets/netacad-ethical-hacker.webp",
+    "pdf_url": "/assets/netacad-ethical-hacker.pdf",
+    "signed_by": "Lynn Bloomer (Director, Cisco Networking Academy)",
+    "program_type": "certifications",
+    "findings": []
+  }
+]

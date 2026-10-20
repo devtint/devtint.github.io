@@ -1,0 +1,6 @@
+# RFC 9116 Security Disclosure File - devtint
+Contact: https://t.me/BadCodeWriter
+Canonical: https://tintnaingwin.vercel.app/.well-known/security.txt
+Preferred-Languages: en, my
+Policy: https://tintnaingwin.vercel.app/403
+Expires: 2027-12-31T23:59:59.000Z

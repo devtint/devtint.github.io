@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://tintnaingwin.vercel.app/</loc><lastmod>2026-10-19</lastmod><priority>1.0</priority></url>
+  <url><loc>https://tintnaingwin.vercel.app/projects</loc><lastmod>2026-10-19</lastmod><priority>0.8</priority></url>
+  <url><loc>https://tintnaingwin.vercel.app/disclosures</loc><lastmod>2026-10-19</lastmod><priority>0.8</priority></url>
+  <url><loc>https://tintnaingwin.vercel.app/disclosures/certifications</loc><lastmod>2026-10-19</lastmod><priority>0.6</priority></url>
+  <url><loc>https://tintnaingwin.vercel.app/disclosures/university</loc><lastmod>2026-10-19</lastmod><priority>0.6</priority></url>
+  <url><loc>https://tintnaingwin.vercel.app/disclosures/corporate</loc><lastmod>2026-10-19</lastmod><priority>0.5</priority></url>
+  <url><loc>https://tintnaingwin.vercel.app/disclosures/institutions</loc><lastmod>2026-10-19</lastmod><priority>0.5</priority></url>
+  <url><loc>https://tintnaingwin.vercel.app/activities</loc><lastmod>2026-10-19</lastmod><priority>0.6</priority></url>
+  <url><loc>https://tintnaingwin.vercel.app/tools</loc><lastmod>2026-10-19</lastmod><priority>0.6</priority></url>
+  <url><loc>https://tintnaingwin.vercel.app/bots</loc><lastmod>2026-10-19</lastmod><priority>0.5</priority></url>
+  <url><loc>https://tintnaingwin.vercel.app/api</loc><lastmod>2026-10-19</lastmod><priority>0.5</priority></url>
+</urlset>

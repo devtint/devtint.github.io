@@ -1,0 +1,18 @@
+# robots.txt for tintnaingwin.vercel.app
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /administrator
+Disallow: /wp-admin
+Disallow: /phpmyadmin
+Disallow: /pma
+Disallow: /cpanel
+Disallow: /actuator
+Disallow: /swagger-ui
+Disallow: /console
+Disallow: /403
+
+# Security Contact & Disclosures
+Security: https://tintnaingwin.vercel.app/.well-known/security.txt
+
+Sitemap: https://tintnaingwin.vercel.app/sitemap.xml

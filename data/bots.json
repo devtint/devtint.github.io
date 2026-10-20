@@ -1,0 +1,32 @@
+[
+  {
+    "title": "@warpgen_robot",
+    "category": "Network Automation",
+    "what_it_does": "WireGuard configuration profile generator assistant.",
+    "how_it_works": "Generates configuration profiles in chat upon user request.",
+    "what_it_solved": "Provides mobile configurations directly inside the Telegram client.",
+    "business_impact": "Generates WireGuard configuration profiles on request.",
+    "tech_stack": [
+      "Python",
+      "Telegram API",
+      "WireGuard"
+    ],
+    "telegram_url": "https://t.me/warpgen_robot",
+    "cli_syntax": "/generate --license YOUR_KEY"
+  },
+  {
+    "title": "@tiktokvideodownload_robot",
+    "category": "Media Stream Automation",
+    "what_it_does": "Watermark-free video downloader helper.",
+    "how_it_works": "Extracts direct CDN stream media paths.",
+    "what_it_solved": "Allows downloading media files without tracking metadata.",
+    "business_impact": "Extracts CDN media streams without tracking parameters.",
+    "tech_stack": [
+      "Python",
+      "Telegram API",
+      "CDN Parsing"
+    ],
+    "telegram_url": "https://t.me/tiktokvideodownload_robot",
+    "cli_syntax": "Send video link directly in chat"
+  }
+]

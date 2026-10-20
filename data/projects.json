@@ -1,0 +1,175 @@
+[
+  {
+    "title": "LLM_SECURITY_REDTEAM_WRITEUP",
+    "category": "AI Security & Red Teaming",
+    "what_it_does": "Offensive AI security handbook, interactive CTF writeup portal, and 4-layer defense architecture reference.",
+    "how_it_works": "Documents exploit primitives, multi-turn crescendo attacks, RAG poisoning, and tool abuse across 24 Wraith Academy targets with spoiler controls and deep technical modals.",
+    "what_it_solved": "Demystifies LLM vulnerabilities beyond statistical base-model alignment with documented exploit primitives and a 4-layer defense-in-depth framework.",
+    "business_impact": "Official WCAP Holder #50 certified methodology (1392/1600) with 100% lab exploitation coverage (24/24 targets) and production-ready guardrail designs.",
+    "tech_stack": [
+      "Offensive AI",
+      "LLM Red Teaming",
+      "Prompt Injection",
+      "WCAP",
+      "Vanilla JS"
+    ],
+    "github_url": "https://github.com/devtint/llm-security-redteam-writeup",
+    "live_url": "https://devtint.github.io/llm-security-redteam-writeup/",
+    "cli_syntax": "git clone https://github.com/devtint/llm-security-redteam-writeup.git && cd llm-security-redteam-writeup",
+    "clone_command": "git clone https://github.com/devtint/llm-security-redteam-writeup",
+    "is_flagship": true,
+    "case_study": {
+      "problem": "Base-model alignment is a statistical floor, not an authorization boundary. Integrating LLMs with external tools, APIs, and RAG pipelines introduces prompt injection, multi-turn crescendo attacks, delimiter collisions, and SSRF exfiltration.",
+      "built": "Achieved WCAP Holder #50 (1392/1600) with 100% flag capture (24/24 targets) across Wraith Academy. Built an open-source offensive AI security field guide and interactive zero-dependency web portal featuring spoiler-protected payloads and deep modal dossiers.",
+      "architecture": "Input Classifier (L1) → LLM Core → Output Classifier (L2) → Secret Gating (L3) → Sandboxed Tools (L4)"
+    }
+  },
+  {
+    "title": "NUCLEI_CNM",
+    "category": "Vulnerability Management",
+    "what_it_does": "Distributed multi-node manager & dashboard for Nuclei engine.",
+    "how_it_works": "Orchestrates parallel scan nodes, syncs YAML templates, and aggregates alerts via Vue.js & Docker.",
+    "what_it_solved": "Replaces manual CLI scan execution across multiple servers with automated template and result synchronization.",
+    "business_impact": "Enables central template management and worker health coordination across multiple nodes.",
+    "tech_stack": [
+      "Go",
+      "Nuclei",
+      "Vue.js",
+      "Docker"
+    ],
+    "github_url": "https://github.com/devtint/NUCLEI_CNM",
+    "cli_syntax": "./nuclei-cnm -config config.yaml -nodes node_list.txt",
+    "clone_command": "git clone https://github.com/devtint/NUCLEI_CNM",
+    "is_flagship": true,
+    "case_study": {
+      "problem": "Managing Nuclei scans across multiple workers can become difficult when scan jobs, templates, results, and worker health need to be coordinated from a central interface.",
+      "built": "A distributed management dashboard automating worker node coordination, real-time log aggregation, template syncing, and container health monitoring.",
+      "architecture": "Controller → Worker Nodes (Docker) → Nuclei → Dashboard"
+    }
+  },
+  {
+    "title": "API_PENTEST",
+    "category": "API Security",
+    "what_it_does": "Automated API security testing fuzzer for RESTful endpoints.",
+    "how_it_works": "Probes parameter matrices for authorization defects, rate-limiting, and input-validation vulnerabilities.",
+    "what_it_solved": "Exposes common logic flaws and missing authorization controls in RESTful web services.",
+    "business_impact": "Automates REST parameter fuzzing to identify potential IDOR and BOLA vulnerabilities before release.",
+    "tech_stack": [
+      "Python",
+      "Fuzzing",
+      "REST-API"
+    ],
+    "github_url": "https://github.com/devtint/API_PENTEST",
+    "cli_syntax": "python api_pentest.py --url https://target.com/api --fuzz idor,bola",
+    "clone_command": "git clone https://github.com/devtint/API_PENTEST",
+    "is_flagship": true
+  },
+  {
+    "title": "SecurityHeaderScanner",
+    "category": "Security Auditing",
+    "what_it_does": "OWASP-aligned HTTP security header compliance auditor.",
+    "how_it_works": "Audits CSP policies, HSTS, CORS wildcard configurations, and cookie flags.",
+    "what_it_solved": "Identifies missing or insecure HTTP headers prior to production deployments.",
+    "business_impact": "Generates structured JSON header compliance reports aligned with OWASP security standards.",
+    "tech_stack": [
+      "Python",
+      "OWASP",
+      "CLI",
+      "CI-CD"
+    ],
+    "github_url": "https://github.com/devtint/SecurityHeaderScanner",
+    "cli_syntax": "python scanner.py -u https://target.com --json --output scan.json",
+    "clone_command": "git clone https://github.com/devtint/SecurityHeaderScanner",
+    "is_flagship": true
+  },
+  {
+    "title": "Js-And-Endpoints-scanner",
+    "category": "Reconnaissance",
+    "what_it_does": "JavaScript bundle inspection and endpoint extraction utility.",
+    "how_it_works": "Parses client-side bundles to identify API keys, endpoints, and routing schemes.",
+    "what_it_solved": "Exposes hidden API endpoints and credentials compiled in production bundles.",
+    "business_impact": "Extracts endpoints and potential API tokens from client-side JS bundles for vulnerability scoping.",
+    "tech_stack": [
+      "JavaScript",
+      "Regex",
+      "Extension",
+      "Recon"
+    ],
+    "github_url": "https://github.com/devtint/Js-And-Endpoints-scanner",
+    "cli_syntax": "node js-scanner.js -f bundle.js --keys --endpoints -o out.txt",
+    "clone_command": "git clone https://github.com/devtint/Js-And-Endpoints-scanner",
+    "is_flagship": true
+  },
+  {
+    "title": "CAPTIVE_AUDIT",
+    "category": "Network Auditing",
+    "what_it_does": "Captive portal security auditing and analysis framework.",
+    "how_it_works": "Tests DNS delegation, MAC authorization tables, and client verification in controlled networks.",
+    "what_it_solved": "Exposes perimeter leaks and verification gaps in public wireless networks.",
+    "business_impact": "Audits captive portal DNS delegation and MAC address validation patterns in authorized environments.",
+    "tech_stack": [
+      "Bash",
+      "Python",
+      "Tshark",
+      "Network"
+    ],
+    "github_url": "https://github.com/devtint/CAPTIVE_AUDIT",
+    "cli_syntax": "sudo bash captive_audit.sh -i wlan0 --dns-bypass --mac-rotate",
+    "clone_command": "git clone https://github.com/devtint/CAPTIVE_AUDIT",
+    "is_flagship": true
+  },
+  {
+    "title": "CFWG_WARP_ENDPOINT_SCANNER",
+    "category": "Network Recon",
+    "what_it_does": "Cloudflare WireGuard WARP IP endpoint discovery and handshake latency tester.",
+    "how_it_works": "Probes Cloudflare network ranges to identify available edge IP endpoints.",
+    "what_it_solved": "Locates responsive edge endpoints to optimize WireGuard network connections.",
+    "business_impact": "Automates Cloudflare WARP edge IP handshake validation and network testing.",
+    "tech_stack": [
+      "Go",
+      "WireGuard",
+      "WARP",
+      "Bash"
+    ],
+    "github_url": "https://github.com/devtint/CFWG_WARP_ENDPOINT_SCANNER",
+    "cli_syntax": "./warp_scanner -ip 162.159.192.0/24 -threads 50 -o best_ips.txt",
+    "clone_command": "git clone https://github.com/devtint/CFWG_WARP_ENDPOINT_SCANNER",
+    "is_flagship": true
+  },
+  {
+    "title": "free-stack",
+    "category": "Cloud Infrastructure",
+    "what_it_does": "Docker & Caddy deployment blueprint for staging environments.",
+    "how_it_works": "Automates HTTPS TLS termination and reverse proxy path routing.",
+    "what_it_solved": "Provides a Docker-based deployment workflow for staging web services.",
+    "business_impact": "Simplifies staging environment hosting with automated certificate generation.",
+    "tech_stack": [
+      "Docker",
+      "Caddy",
+      "Cloudflare",
+      "Ops"
+    ],
+    "github_url": "https://github.com/devtint/free-stack",
+    "cli_syntax": "docker compose -f docker-compose.prod.yml up -d --build",
+    "clone_command": "git clone https://github.com/devtint/free-stack",
+    "is_flagship": false
+  },
+  {
+    "title": "AutoShortVideo",
+    "category": "Automation Pipeline",
+    "what_it_does": "Scripted video generation and social integration pipeline.",
+    "how_it_works": "Automates rendering overlay graphics and dispatching via Telegram APIs.",
+    "what_it_solved": "Reduces manual rendering overhead by scripting video editing pipelines.",
+    "business_impact": "Saves manual editing time through command-line rendering scripts.",
+    "tech_stack": [
+      "Python",
+      "FFmpeg",
+      "Telegram API",
+      "YouTube API"
+    ],
+    "github_url": "https://github.com/devtint/AutoShortVideo",
+    "cli_syntax": "python main.py --render --publish telegram,youtube",
+    "clone_command": "git clone https://github.com/devtint/AutoShortVideo",
+    "is_flagship": false
+  }
+]

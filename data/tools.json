@@ -1,0 +1,68 @@
+[
+  {
+    "title": "AntigravityQuotaManager",
+    "category": "AI Tooling",
+    "what_it_does": "AI token usage monitor and CLI billing tracker.",
+    "how_it_works": "Parses local logs and queries API usage metrics.",
+    "what_it_solved": "Provides real-time visibility into developer API limits.",
+    "business_impact": "Tracks AI rate limits to prevent script interruption during development.",
+    "tech_stack": [
+      "TypeScript",
+      "CLI",
+      "AI Quotas"
+    ],
+    "github_url": "https://github.com/devtint/AntigravityQuotaManager",
+    "cli_syntax": "antigravity-quota --check --model gemini-3.6-flash",
+    "is_flagship": false
+  },
+  {
+    "title": "WarpConfGen & Web API",
+    "category": "Network Utilities",
+    "what_it_does": "Go-based WireGuard configuration builder.",
+    "how_it_works": "Registers test devices and extracts WireGuard configurations.",
+    "what_it_solved": "Automates WireGuard configurations for testing nodes.",
+    "business_impact": "Speeds up WireGuard connection profiles setup in lab networks.",
+    "tech_stack": [
+      "Go",
+      "WireGuard",
+      "API Docs",
+      "CLI"
+    ],
+    "github_url": "https://warp-conf-gen.vercel.app/docs",
+    "cli_syntax": "./warpconfgen --register --license LICENSE_KEY -o wg0.conf",
+    "is_flagship": false
+  },
+  {
+    "title": "TempMail API CLI",
+    "category": "API Automation",
+    "what_it_does": "Disposable email verification client.",
+    "how_it_works": "Queries transient inboxes to parse confirmation links.",
+    "what_it_solved": "Automates verification flows for signup integration tests.",
+    "business_impact": "Automates email confirmation polling in isolated application testing pipelines.",
+    "tech_stack": [
+      "Python",
+      "mail.tm API",
+      "Automation"
+    ],
+    "github_url": "https://github.com/devtint/TempMail",
+    "cli_syntax": "python tempmail.py --create --listen",
+    "is_flagship": false
+  },
+  {
+    "title": "r3verse_shells_gen",
+    "category": "Offensive Security",
+    "what_it_does": "Multi-language reverse shell payload formatter.",
+    "how_it_works": "Encodes connection payloads across standard execution environments.",
+    "what_it_solved": "Standardizes payload syntax and encoding configurations.",
+    "business_impact": "Generates multi-language reverse shell payloads with standard character encoding options.",
+    "tech_stack": [
+      "Python",
+      "HTML",
+      "JS",
+      "Offensive"
+    ],
+    "github_url": "https://github.com/devtint/r3verse_shells_gen",
+    "cli_syntax": "python r3verse_gen.py --ip 10.10.14.3 --port 4444 --type bash",
+    "is_flagship": false
+  }
+]
